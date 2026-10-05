@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PaLupe Photography | Professional Photography in Egbeda, Lagos</title>
+<meta name="description" content="PaLupe Photography is a photography studio at 1 Ayisat Street, off Olugbede Model Market, Egbeda, Lagos. Portraits, weddings, events, studio & outdoor sessions. Book via WhatsApp: 0803 951 7974.">
+<meta name="keywords" content="PaLupe Photography, photographer Egbeda, photography studio Lagos, wedding photographer Lagos, portrait studio Egbeda, event photography Lagos">
+<meta property="og:title" content="PaLupe Photography — Your Moments. Beautifully Captured.">
+<meta property="og:description" content="Professional photography in Egbeda, Lagos. Portraits, Weddings, Events, Studio Sessions.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1200&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        gold: { DEFAULT:'#C6A15B', light:'#E9D9B4', pale:'#F5ECD8', dark:'#8A6D2E' },
+        ink: '#0B0B0C',
+        coal: '#141416',
+        line: 'rgba(198,161,91,0.22)',
+        cream: '#FAF6EF',
+        cream2: '#F3EDE0'
+      },
+      fontFamily: {
+        serif: ['"Cormorant Garamond"','"Playfair Display"','Georgia','serif'],
+        sans: ['Manrope','Inter','system-ui','sans-serif']
+      },
+      letterSpacing: { mega: '0.32em' }
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"PhotographyBusiness",
+ "name":"PaLupe Photography",
+ "address":{"@type":"PostalAddress","streetAddress":"1 Ayisat Street, off Olugbede Model Market","addressLocality":"Egbeda, Lagos","addressCountry":"NG"},
+ "telephone":"+2348039517974",
+ "priceRange":"Contact for details",
+ "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"2"},
+ "description":"Photography Studio in Egbeda, Lagos. Portrait, Wedding, Event, Studio and Outdoor Photography."
+}
+</script>
+<style>
+  html{scroll-behavior:smooth;scroll-padding-top:92px}
+  body{background:#0B0B0C;color:#FAF6EF;font-family:Manrope,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  ::selection{background:#C6A15B;color:#0B0B0C}
+  ::-webkit-scrollbar{width:10px}
+  ::-webkit-scrollbar-track{background:#0B0B0C}
+  ::-webkit-scrollbar-thumb{background:#3a3326;border-radius:2px;border:2px solid #0B0B0C}
+  ::-webkit-scrollbar-thumb:hover{background:#C6A15B}
+  .serif{font-family:"Cormorant Garamond",Georgia,serif}
+  .gold-line{height:1px;background:linear-gradient(90deg,transparent,#C6A15B,transparent)}
+  .label{font-size:11px;letter-spacing:0.32em;text-transform:uppercase;color:#C6A15B;font-weight:700}
+  .btn-gold{background:#C6A15B;color:#0B0B0C;transition:.35s cubic-bezier(.22,1,.36,1)}
+  .btn-gold:hover{background:#E9D9B4;transform:translateY(-2px);box-shadow:0 14px 34px -10px rgba(198,161,91,.55)}
+  .btn-ghost{border:1px solid rgba(250,246,239,.35);transition:.35s}
+  .btn-ghost:hover{border-color:#C6A15B;color:#E9D9B4;background:rgba(198,161,91,.08);transform:translateY(-2px)}
+  .btn-dark{background:#0B0B0C;color:#FAF6EF;transition:.35s}
+  .btn-dark:hover{background:#1e1e20;transform:translateY(-2px)}
+  /* grain */
+  .grain::after{content:"";position:fixed;inset:0;z-index:70;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  /* hero ken burns */
+  .hero-slide{position:absolute;inset:0;opacity:0;transition:opacity 2.2s ease;overflow:hidden}
+  .hero-slide.active{opacity:1}
+  .hero-slide img{width:100%;height:100%;object-fit:cover;transform:scale(1.12);animation:kenburns 12s ease-out forwards}
+  @keyframes kenburns{from{transform:scale(1.18)}to{transform:scale(1.03)}}
+  .hero-vignette{background:radial-gradient(ellipse at center,transparent 0%,rgba(0,0,0,.55) 68%,rgba(0,0,0,.88) 100%),linear-gradient(to bottom,rgba(0,0,0,.62) 0%,rgba(0,0,0,.45) 35%,rgba(0,0,0,.72) 75%,#0B0B0C 100%)}
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(36px);transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .9s cubic-bezier(.22,1,.36,1)}
+  .reveal.visible{opacity:1;transform:none}
+  .reveal-d1{transition-delay:.08s}.reveal-d2{transition-delay:.16s}.reveal-d3{transition-delay:.24s}.reveal-d4{transition-delay:.32s}
+  /* marquee */
+  @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  .marquee-track{animation:marquee 28s linear infinite}
+  /* nav */
+  #nav{transition:.45s}
+  #nav.scrolled{background:rgba(11,11,12,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(198,161,91,.18);box-shadow:0 10px 40px -10px rgba(0,0,0,.7)}
+  #nav.scrolled .nav-inner{padding-top:.7rem;padding-bottom:.7rem}
+  .nav-link{position:relative;font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:rgba(250,246,239,.78)}
+  .nav-link::after{content:"";position:absolute;left:0;bottom:-6px;height:1px;width:0;background:#C6A15B;transition:.35s}
+  .nav-link:hover,.nav-link.active{color:#fff}
+  .nav-link:hover::after,.nav-link.active::after{width:100%}
+  /* masonry */
+  .masonry{columns:1;column-gap:1.25rem}
+  @media(min-width:640px){.masonry{columns:2}}
+  @media(min-width:1024px){.masonry{columns:3}}
+  .m-item{break-inside:avoid;margin-bottom:1.25rem;position:relative;overflow:hidden;background:#141416;border:1px solid rgba(255,255,255,.07);border-radius:3px;cursor:zoom-in;transition:.5s}
+  .m-item img{transition:transform 1.1s cubic-bezier(.22,1,.36,1),filter .6s;width:100%;object-fit:cover;display:block}
+  .m-item:hover img{transform:scale(1.06)}
+  .m-item .overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.82) 0%,rgba(0,0,0,.15) 55%,transparent 100%);opacity:.85;transition:.5s}
+  .m-item:hover .overlay{opacity:1}
+  .m-item:hover{border-color:rgba(198,161,91,.5);box-shadow:0 20px 50px -12px rgba(0,0,0,.7)}
+  .filter-btn{font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;padding:.7rem 1.3rem;border:1px solid rgba(255,255,255,.14);color:rgba(250,246,239,.7);border-radius:2px;transition:.3s;white-space:nowrap}
+  .filter-btn:hover{border-color:#C6A15B;color:#fff}
+  .filter-btn.active{background:#C6A15B;border-color:#C6A15B;color:#0B0B0C}
+  /* service card */
+  .svc{background:#fff;border:1px solid #E8DDC6;border-radius:3px;transition:.5s cubic-bezier(.22,1,.36,1);position:relative;overflow:hidden}
+  .svc:hover{transform:translateY(-8px);box-shadow:0 30px 60px -18px rgba(11,11,12,.25);border-color:#C6A15B}
+  .svc .imgwrap{overflow:hidden}
+  .svc .imgwrap img{transition:1s}
+  .svc:hover .imgwrap img{transform:scale(1.07)}
+  /* inputs */
+  .field label{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:#3a362e;margin-bottom:.5rem;display:block}
+  .field input,.field select,.field textarea{width:100%;background:#fff;border:1px solid #DDD2B8;border-radius:2px;padding:.9rem 1rem;font-size:14.5px;color:#141416;outline:none;transition:.3s}
+  .field input:focus,.field select:focus,.field textarea:focus{border-color:#C6A15B;box-shadow:0 0 0 3px rgba(198,161,91,.18);background:#FFFEFA}
+  /* whatsapp float */
+  @keyframes waPulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+  .wa-float{animation:waPulse 2.4s infinite}
+  /* lightbox */
+  #lightbox{backdrop-filter:blur(14px)}
+  #lightbox img{max-height:78vh;box-shadow:0 40px 100px rgba(0,0,0,.8)}
+  /* preloader */
+  #preloader{transition:opacity .8s,visibility .8s}
+  #preloader.done{opacity:0;visibility:hidden}
+  @keyframes loadbar{from{width:0}to{width:100%}}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+  .hero-anim{opacity:0;animation:fadeUp 1.1s cubic-bezier(.22,1,.36,1) forwards}
+  /* outline text */
+  .outline-text{-webkit-text-stroke:1px rgba(198,161,91,.28);color:transparent}
+  /* faq */
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.22,1,.36,1)}
+  .faq-item.open .faq-a{max-height:300px}
+  .faq-item.open .faq-icon{transform:rotate(45deg);color:#C6A15B}
+  .faq-icon{transition:.4s}
+  /* progress */
+  #progress{transform-origin:left}
+  input[type="date"],input[type="time"]{min-height:52px}
+  @media(max-width:640px){.masonry{columns:1}}
+</style>
+</head>
+<body class="grain antialiased">
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-gold focus:text-black focus:px-4 focus:py-2 focus:text-sm focus:font-bold">Skip to content</a>
+<div id="progress" class="fixed top-0 left-0 h-[2px] w-full bg-gold z-[90] scale-x-0"></div>
+
+<!-- PRELOADER -->
+<div id="preloader" class="fixed inset-0 z-[100] bg-ink flex flex-col items-center justify-center">
+  <div class="serif text-5xl md:text-6xl tracking-wide text-cream">Pa<span class="text-gold italic">Lupe</span></div>
+  <div class="mt-2 text-[10px] tracking-mega uppercase text-cream/60">Photography • Egbeda • Lagos</div>
+  <div class="mt-8 w-56 h-px bg-white/10 overflow-hidden"><div class="h-full bg-gold" style="animation:loadbar 1.6s ease forwards"></div></div>
+</div>
+
+<!-- TOP BAR -->
+<div class="hidden md:block bg-[#0e0e10] border-b border-white/5 text-[12px] tracking-wide">
+  <div class="max-w-7xl mx-auto px-6 py-2.5 flex items-center justify-between text-cream/60">
+    <div class="flex items-center gap-2">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#C6A15B" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span>1 Ayisat Street, off Olugbede Model Market, Egbeda, Lagos</span>
+    </div>
+    <div class="flex items-center gap-6">
+      <a href="tel:+2348039517974" class="hover:text-gold transition flex items-center gap-2"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.79.66 2.64a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.44-1.23a2 2 0 0 1 2.11-.45c.85.32 1.74.54 2.64.66A2 2 0 0 1 22 16.92z"/></svg> 0803 951 7974</a>
+      <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"></span> Available for bookings</span>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<header id="nav" class="fixed top-0 md:top-[37px] left-0 w-full z-[80]">
+  <div class="nav-inner max-w-7xl mx-auto px-5 md:px-8 py-5 flex items-center justify-between transition-all duration-500">
+    <a href="#home" class="flex items-center gap-3 group" aria-label="PaLupe Photography home">
+      <div class="w-10 h-10 border border-gold/60 flex items-center justify-center bg-black/40 backdrop-blur rounded-[3px]">
+        <span class="serif text-xl text-gold font-semibold">P</span>
+      </div>
+      <div class="leading-none">
+        <div class="serif text-[22px] tracking-wide text-white">Pa<span class="italic text-gold">Lupe</span></div>
+        <div class="text-[9px] tracking-mega uppercase text-cream/60 mt-1">Photography</div>
+      </div>
+    </a>
+    <nav class="hidden lg:flex items-center gap-9" aria-label="Primary">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#why" class="nav-link">Why Us</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="tel:+2348039517974" class="hidden md:flex w-11 h-11 items-center justify-center border border-white/20 rounded-[3px] hover:border-gold hover:text-gold text-cream transition" aria-label="Call PaLupe Photography">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.79.66 2.64a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.44-1.23a2 2 0 0 1 2.11-.45c.85.32 1.74.54 2.64.66A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+      <a href="#booking" class="btn-gold hidden sm:inline-flex items-center gap-2 text-[12px] font-extrabold tracking-[0.18em] uppercase px-6 py-3.5 rounded-[3px]">Book a Session
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <button id="menuBtn" class="lg:hidden w-11 h-11 flex flex-col items-center justify-center gap-[6px] border border-white/20 rounded-[3px] bg-black/40" aria-label="Open menu" aria-expanded="false">
+        <span class="w-5 h-px bg-white block transition-all"></span><span class="w-5 h-px bg-gold block transition-all"></span><span class="w-5 h-px bg-white block transition-all"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="fixed inset-0 z-[85] bg-ink/98 backdrop-blur-xl hidden flex-col justify-center px-8" style="background:rgba(11,11,12,.98)">
+  <button id="menuClose" class="absolute top-6 right-6 w-11 h-11 border border-white/20 rounded-[3px] flex items-center justify-center text-2xl text-cream" aria-label="Close menu">×</button>
+  <div class="label mb-6">Menu</div>
+  <nav class="flex flex-col gap-2" aria-label="Mobile">
+    <a href="#home" class="mob-link serif text-4xl text-cream hover:text-gold transition py-2 border-b border-white/5">Home</a>
+    <a href="#about" class="mob-link serif text-4xl text-cream hover:text-gold transition py-2 border-b border-white/5">About</a>
+    <a href="#portfolio" class="mob-link serif text-4xl text-cream hover:text-gold transition py-2 border-b border-white/5">Portfolio</a>
+    <a href="#services" class="mob-link serif text-4xl text-cream hover:text-gold transition py-2 border-b border-white/5">Services</a>
+    <a href="#booking" class="mob-link serif text-4xl italic text-gold py-2 border-b border-white/5">Book a Session</a>
+    <a href="#contact" class="mob-link serif text-4xl text-cream hover:text-gold transition py-2">Contact</a>
+  </nav>
+  <div class="mt-8 flex gap-3">
+    <a href="tel:+2348039517974" class="flex-1 text-center border border-white/20 py-4 text-xs font-bold tracking-[0.2em] uppercase rounded-[3px]">Call Now</a>
+    <a href="https://wa.me/2348039517974?text=Hello%20PaLupe%20Photography!%20I%27d%20like%20to%20book%20a%20session." target="_blank" rel="noopener" class="flex-1 text-center bg-[#25D366] text-black py-4 text-xs font-bold tracking-[0.2em] uppercase rounded-[3px]">WhatsApp</a>
+  </div>
+  <p class="mt-6 text-cream/40 text-sm">1 Ayisat Street, Egbeda, Lagos • 0803 951 7974</p>
+</div>
+
+<main id="main">
+<!-- ============ HERO ============ -->
+<section id="home" class="relative min-h-[100svh] flex items-end md:items-center overflow-hidden" aria-label="Welcome">
+  <div class="absolute inset-0">
+    <div class="hero-slide active"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1920&auto=format&fit=crop" alt="Elegant studio portrait with dramatic light" fetchpriority="high"></div>
+    <div class="hero-slide"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1920&auto=format&fit=crop" alt="Wedding couple holding hands" loading="lazy"></div>
+    <div class="hero-slide"><img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1920&auto=format&fit=crop" alt="Beautiful natural light portrait" loading="lazy"></div>
+    <div class="absolute inset-0 hero-vignette"></div>
+  </div>
+
+  <!-- side dots -->
+  <div class="absolute right-6 md:right-10 top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-3 z-20" id="heroDots" role="tablist" aria-label="Hero images"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-5 md:px-8 w-full pt-36 pb-16 md:py-40">
+    <div class="max-w-3xl">
+      <div class="hero-anim flex items-center gap-3 mb-6" style="animation-delay:.15s">
+        <span class="w-10 h-px bg-gold"></span>
+        <span class="text-[11px] tracking-mega uppercase text-gold font-bold">Egbeda • Lagos • Studio & Outdoor</span>
+      </div>
+      <h1 class="hero-anim serif text-white leading-[0.95] text-[52px] sm:text-[72px] lg:text-[96px] font-medium" style="animation-delay:.3s">
+        Your Moments.<br><span class="italic font-normal text-gold-light" style="color:#E9D9B4">Beautifully Captured.</span>
+      </h1>
+      <p class="hero-anim mt-6 text-[17px] md:text-lg text-cream/75 max-w-xl font-light leading-relaxed" style="animation-delay:.45s">
+        Professional photography in Egbeda, Lagos. Portraits, weddings, events and studio sessions — composed with care, delivered with quality.
+      </p>
+      <div class="hero-anim mt-9 flex flex-col sm:flex-row gap-4" style="animation-delay:.6s">
+        <a href="#booking" class="btn-gold inline-flex justify-center items-center gap-3 px-9 py-4.5 py-4 text-[13px] font-extrabold tracking-[0.18em] uppercase rounded-[3px]">
+          Book a Session
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#portfolio" class="btn-ghost inline-flex justify-center items-center gap-3 px-9 py-4 text-[13px] font-bold tracking-[0.18em] uppercase text-white rounded-[3px]">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          View Our Work
+        </a>
+      </div>
+      <div class="hero-anim mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 text-[13px] text-cream/60" style="animation-delay:.75s">
+        <span class="flex items-center gap-2">
+          <span class="flex text-gold" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          </span>
+          <strong class="text-white">5.0</strong> Google Rating • 2 reviews
+        </span>
+        <span class="hidden sm:inline w-px h-4 bg-white/20"></span>
+        <span>Photography Studio • Egbeda, Lagos</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="absolute bottom-0 left-0 w-full z-10">
+    <div class="max-w-7xl mx-auto px-5 md:px-8 pb-6 flex items-center justify-between text-[11px] tracking-[0.25em] uppercase text-cream/40">
+      <span class="hidden md:flex items-center gap-3"><span class="w-12 h-px bg-cream/20"></span> Scroll to explore</span>
+      <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span> <span id="heroCounter">01 / 03</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="bg-[#0e0e10] border-y border-line" aria-label="Trust">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 py-7 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-0 md:divide-x md:divide-white/10 text-center">
+    <a href="https://www.google.com/maps/search/?api=1&query=PaLupe+Photography+Egbeda+Lagos" target="_blank" rel="noopener" class="reveal flex items-center justify-center gap-4 group">
+      <div class="w-11 h-11 rounded-full border border-gold/40 flex items-center justify-center text-gold font-bold serif text-lg">G</div>
+      <div class="text-left"><div class="text-white font-bold text-[15px]">5.0 Google Rating</div><div class="text-cream/50 text-[13px] group-hover:text-gold transition">Verified • 2 reviews →</div></div>
+    </a>
+    <div class="reveal reveal-d1 flex items-center justify-center gap-4">
+      <div class="w-11 h-11 rounded-full border border-white/15 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C6A15B" stroke-width="1.8"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+      <div class="text-left"><div class="text-white font-bold text-[15px]">Photography Studio</div><div class="text-cream/50 text-[13px]">Egbeda, Lagos</div></div>
+    </div>
+    <a href="tel:+2348039517974" class="reveal reveal-d2 flex items-center justify-center gap-4 group">
+      <div class="w-11 h-11 rounded-full border border-white/15 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C6A15B" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.79.66 2.64a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.44-1.23a2 2 0 0 1 2.11-.45c.85.32 1.74.54 2.64.66A2 2 0 0 1 22 16.92z"/></svg></div>
+      <div class="text-left"><div class="text-white font-bold text-[15px]">0803 951 7974</div><div class="text-cream/50 text-[13px] group-hover:text-gold transition">Call or WhatsApp →</div></div>
+    </a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="bg-cream text-ink py-20 md:py-28 relative overflow-hidden">
+  <div class="serif outline-text absolute -top-4 left-0 text-[18vw] leading-none font-bold pointer-events-none select-none opacity-60" style="-webkit-text-stroke-color:rgba(138,109,46,.18)">Atelier</div>
+  <div class="max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center relative">
+    <div class="reveal relative">
+      <div class="grid grid-cols-12 gap-4">
+        <div class="col-span-7 rounded-[3px] overflow-hidden shadow-2xl">
+          <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?q=80&w=800&auto=format&fit=crop" alt="Professional studio lighting setup" class="w-full h-[420px] md:h-[520px] object-cover" loading="lazy">
+        </div>
+        <div class="col-span-5 flex flex-col gap-4">
+          <div class="rounded-[3px] overflow-hidden shadow-xl">
+            <img src="https://images.unsplash.com/photo-1539701938214-0d9736e1c16b?q=80&w=600&auto=format&fit=crop" alt="Elegant portrait of a woman" class="w-full h-[200px] md:h-[250px] object-cover" loading="lazy">
+          </div>
+          <div class="rounded-[3px] overflow-hidden shadow-xl flex-1">
+            <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=600&auto=format&fit=crop" alt="Couple wedding moment" class="w-full h-[200px] md:h-[254px] object-cover" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <div class="absolute -bottom-6 -left-2 md:left-6 bg-ink text-cream px-6 py-5 rounded-[3px] shadow-2xl flex items-center gap-4 border border-gold/30">
+        <div class="serif text-4xl text-gold font-semibold">5.0</div>
+        <div class="text-[12px] leading-snug text-cream/70">Google Rating<br><span class="text-cream/40">2 verified reviews</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="reveal label mb-4 flex items-center gap-3"><span class="w-8 h-px bg-gold inline-block"></span> About the Studio</div>
+      <h2 class="reveal reveal-d1 serif text-[42px] md:text-[58px] leading-[1.02] font-medium">We Capture More<br>Than <span class="italic text-[#8A6D2E]">Pictures.</span></h2>
+      <p class="reveal reveal-d2 mt-6 text-[16.5px] leading-relaxed text-[#3d3a33]">PaLupe Photography is a photography studio in Egbeda, Lagos. We help clients preserve important moments through carefully composed, high-quality photography — the people you love, the milestones you worked for, and the everyday beauty in between.</p>
+      <p class="reveal reveal-d2 mt-4 text-[16.5px] leading-relaxed text-[#3d3a33]">Every session is guided with patience: thoughtful lighting, honest direction, and attention to detail, so you feel comfortable and look your best. Whether in our studio or on location, we focus on images you will be proud to keep, print and share.</p>
+      <div class="reveal reveal-d3 mt-8 grid sm:grid-cols-2 gap-4 text-[14px]">
+        <div class="flex items-start gap-3 bg-white border border-[#E8DDC6] p-4 rounded-[3px]"><span class="mt-0.5 w-8 h-8 shrink-0 rounded-full bg-ink text-gold flex items-center justify-center">✓</span><span><strong>Guided sessions</strong><br><span class="text-[#6b665c]">Posing help for natural, flattering results.</span></span></div>
+        <div class="flex items-start gap-3 bg-white border border-[#E8DDC6] p-4 rounded-[3px]"><span class="mt-0.5 w-8 h-8 shrink-0 rounded-full bg-ink text-gold flex items-center justify-center">✓</span><span><strong>Studio & outdoor</strong><br><span class="text-[#6b665c]">In-studio control or Lagos natural light.</span></span></div>
+      </div>
+      <div class="reveal reveal-d4 mt-8 flex flex-col sm:flex-row gap-4">
+        <a href="#portfolio" class="btn-dark px-8 py-4 text-[12px] font-extrabold tracking-[0.18em] uppercase rounded-[3px] text-center">See Our Work</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=1+Ayisat+Street+off+Olugbede+Model+Market+Egbeda+Lagos" target="_blank" rel="noopener" class="px-8 py-4 text-[12px] font-extrabold tracking-[0.18em] uppercase rounded-[3px] border border-ink/20 hover:border-[#8A6D2E] hover:text-[#8A6D2E] transition text-center">Find the Studio</a>
+      </div>
+      <div class="reveal mt-8 serif italic text-2xl text-[#8A6D2E]">— PaLupe Photography, Egbeda</div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="bg-ink border-y border-line py-4 overflow-hidden" aria-hidden="true">
+  <div class="marquee-track flex whitespace-nowrap gap-0 w-max">
+    <div class="flex items-center gap-8 pr-8 text-[12px] tracking-mega uppercase text-cream/50 font-bold">
+      <span>Portraits</span><span class="text-gold">✦</span><span>Weddings</span><span class="text-gold">✦</span><span>Events</span><span class="text-gold">✦</span><span>Studio Sessions</span><span class="text-gold">✦</span><span>Outdoor</span><span class="text-gold">✦</span><span>Lifestyle</span><span class="text-gold">✦</span>
+    </div>
+    <div class="flex items-center gap-8 pr-8 text-[12px] tracking-mega uppercase text-cream/50 font-bold">
+      <span>Portraits</span><span class="text-gold">✦</span><span>Weddings</span><span class="text-gold">✦</span><span>Events</span><span class="text-gold">✦</span><span>Studio Sessions</span><span class="text-gold">✦</span><span>Outdoor</span><span class="text-gold">✦</span><span>Lifestyle</span><span class="text-gold">✦</span>
+    </div>
+  </div>
+</div>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="bg-ink py-20 md:py-28 relative overflow-hidden">
+  <div class="serif absolute top-6 left-1/2 -translate-x-1/2 text-[13vw] leading-none font-bold outline-text pointer-events-none select-none whitespace-nowrap opacity-70">PALUPE</div>
+  <div class="max-w-7xl mx-auto px-5 md:px-8 relative">
+    <div class="text-center max-w-2xl mx-auto">
+      <div class="reveal label">Selected Work</div>
+      <h2 class="reveal reveal-d1 serif text-[42px] md:text-[60px] leading-tight mt-3">Portfolio</h2>
+      <p class="reveal reveal-d2 text-cream/60 mt-4 font-light">A glimpse of the styles we shoot. Tap any image to view fullscreen.</p>
+      <div class="reveal reveal-d2 mt-4 inline-flex items-center gap-2 text-[12px] text-gold-light/80 bg-gold/10 border border-gold/25 px-4 py-2 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-gold"></span> Sample imagery shown — final gallery features PaLupe client work</div>
+    </div>
+    <div class="reveal mt-10 flex gap-3 justify-start md:justify-center overflow-x-auto pb-2 -mx-5 px-5 md:mx-0 md:px-0 md:flex-wrap" role="tablist" aria-label="Filter portfolio">
+      <button class="filter-btn active" data-filter="all">All Work</button>
+      <button class="filter-btn" data-filter="portraits">Portraits</button>
+      <button class="filter-btn" data-filter="weddings-events">Weddings & Events</button>
+      <button class="filter-btn" data-filter="studio">Studio Sessions</button>
+      <button class="filter-btn" data-filter="lifestyle">Lifestyle</button>
+    </div>
+    <div id="gallery" class="masonry mt-8" aria-live="polite"></div>
+    <div class="mt-10 text-center flex flex-col sm:flex-row items-center justify-center gap-4">
+      <p class="text-cream/50 text-sm">Like what you see? Let's create yours.</p>
+      <a href="#booking" class="btn-gold px-8 py-3.5 text-[12px] font-extrabold tracking-[0.18em] uppercase rounded-[3px]">Book a Session</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="bg-cream text-ink py-20 md:py-28">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+      <div>
+        <div class="reveal label flex items-center gap-3"><span class="w-8 h-px bg-gold inline-block"></span> What We Do</div>
+        <h2 class="reveal reveal-d1 serif text-[42px] md:text-[60px] leading-[1.02] mt-3">Services</h2>
+        <p class="reveal reveal-d2 text-[#6b665c] mt-3 max-w-xl">Short, clear sessions tailored to your moment. Contact us for current details and availability — no hidden surprises.</p>
+      </div>
+      <a href="https://wa.me/2348039517974?text=Hello%20PaLupe%20Photography!%20I%27d%20like%20to%20discuss%20a%20session." target="_blank" rel="noopener" class="reveal btn-dark shrink-0 px-7 py-4 text-[12px] font-extrabold tracking-[0.18em] uppercase rounded-[3px] inline-flex items-center gap-2">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.11 3.22 5.1 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35M12.04 2C6.56 2 2.1 6.45 2.1 11.93c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.48 0 9.93-4.45 9.93-9.93 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2"/></svg>
+        Discuss Your Session
+      </a>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="servicesGrid">
+      <!-- Service cards -->
+      <article class="reveal svc">
+        <div class="imgwrap h-56"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=800&auto=format&fit=crop" alt="Portrait photography sample" class="w-full h-full object-cover" loading="lazy"></div>
+        <div class="p-7"><div class="text-[11px] tracking-mega uppercase text-[#8A6D2E] font-extrabold">01 — Individuals & Families</div><h3 class="serif text-[28px] mt-2">Portrait Photography</h3><p class="text-[14.5px] text-[#5c574d] mt-2 leading-relaxed">Individual and family portraits with guided posing and clean, flattering light.</p><a href="#booking" data-service="Portrait Photography" class="svc-book mt-4 inline-flex items-center gap-2 text-[12px] font-extrabold tracking-[0.16em] uppercase text-ink hover:text-[#8A6D2E] transition">Book this <span>→</span></a></div>
+      </article>
+      <article class="reveal reveal-d1 svc">
+        <div class="imgwrap h-56"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=800&auto=format&fit=crop" alt="Event photography sample" class="w-full h-full object-cover" loading="lazy"></div>
+        <div class="p-7"><div class="text-[11px] tracking-mega uppercase text-[#8A6D2E] font-extrabold">02 — Birthdays & Gatherings</div><h3 class="serif text-[28px] mt-2">Event Photography</h3><p class="text-[14.5px] text-[#5c574d] mt-2 leading-relaxed">Attentive coverage of birthdays, ceremonies and gatherings as they unfold.</p><a href="#booking" data-service="Event Photography" class="svc-book mt-4 inline-flex items-center gap-2 text-[12px] font-extrabold tracking-[0.16em] uppercase text-ink hover:text-[#8A6D2E] transition">Book this <span>→</span></a></div>
+      </article>
+      <article class="reveal reveal-d2 svc">
+        <div class="imgwrap h-56"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop" alt="Wedding photography sample" class="w-full h-full object-cover" loading="lazy"></div>
+        <div class="p-7"><div class="text-[11px] tracking-mega uppercase text-[#8A6D2E] font-extrabold">03 — Ceremony & Celebration</div><h3 class="serif text-[28px] mt-2">Wedding Photography</h3><p class="text-[14.5px] text-[#5c574d] mt-2 leading-relaxed">Careful documentation of your ceremony, portraits and celebration details.</p><a href="#booking" data-service="Wedding Photography" class="svc-book mt-4 inline-flex items-center gap-2 text-[12px] font-extrabold tracking-[0.16em] uppercase text-ink hover:text-[#8A6D2E] transition">Book this <span>→</span></a></div>
+      </article>
+      <article class="reveal svc">
+        <div class="imgwrap h-56"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop" alt="Studio photography sample" class="w-full h-full object-cover" loading="lazy"></div>
+        <div class="p-7"><div class="text-[11px] tracking-mega uppercase text-[#8A6D2E] font-extrabold">04 — In-Studio</div><h3 class="serif text-[28px] mt-2">Studio Photography</h3><p class="text-[14.5px] text-[#5c574d] mt-2 leading-relaxed">Controlled sessions at our Egbeda space with professional lighting and backdrops.</p><a href="#booking" data-service="Studio Photography" class="svc-book mt-4 inline-flex items-center gap-2 text-[12px] font-extrabold tracking-[0.16em] uppercase text-ink hover:text-[#8A6D2E] transition">Book this <span>→</span></a></div>
+      </article>
+      <article class="reveal reveal-d1 svc">
+        <div class="imgwrap h-56"><img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=800&auto=format&fit=crop" alt="Outdoor photography sample" class="w-full h-full object-cover" loading="lazy"></div>
+        <div class="p-7"><div class="text-[11px] tracking-mega uppercase text-[#8A6D2E] font-extrabold">05 — Natural Light</div><h3 class="serif text-[28px] mt-2">Outdoor Photography</h3><p class="text-[14.5px] text-[#5c574d] mt-2 leading-relaxed">Natural-light sessions at locations around Lagos — parks, streets and open spaces.</p><a href="#booking" data-service="Outdoor Photography" class="svc-book mt-4 inline-flex items-center gap-2 text-[12px] font-extrabold tracking-[0.16em] uppercase text-ink hover:text-[#8A6D2E] transition">Book this <span>→</span></a></div>
+      </article>
+      <article class="reveal reveal-d2 svc !bg-ink !border-ink text-cream">
+        <div class="p-7 h-full flex flex-col justify-between min-h-[340px]">
+          <div><div class="text-[11px] tracking-mega uppercase text-gold font-extrabold">06 — Tailored to You</div><h3 class="serif text-[32px] mt-2 leading-tight">Custom<br><span class="italic text-gold-light" style="color:#E9D9B4">Sessions</span></h3><p class="text-[14.5px] text-cream/60 mt-3 leading-relaxed">Have something different in mind? Tell us your idea and we'll plan around it.</p></div>
+          <a href="https://wa.me/2348039517974?text=Hello%20PaLupe%20Photography!%20I%20have%20a%20custom%20session%20idea%20I%27d%20like%20to%20discuss." target="_blank" rel="noopener" class="btn-gold mt-6 text-center px-6 py-4 text-[12px] font-extrabold tracking-[0.18em] uppercase rounded-[3px]">Discuss Your Session</a>
+        </div>
+      </article>
+    </div>
+    <!-- process -->
+    <div class="reveal mt-10 bg-white border border-[#E8DDC6] rounded-[3px] px-6 md:px-10 py-8 grid md:grid-cols-3 gap-6">
+      <div class="flex gap-4"><span class="serif text-4xl text-[#C6A15B]">1</span><div><strong class="text-[15px]">Tell us your plan</strong><p class="text-sm text-[#6b665c] mt-1">Message us on WhatsApp or use the booking form below.</p></div></div>
+      <div class="flex gap-4 md:border-l md:border-[#E8DDC6] md:pl-8"><span class="serif text-4xl text-[#C6A15B]">2</span><div><strong class="text-[15px]">Confirm your session</strong><p class="text-sm text-[#6b665c] mt-1">We'll agree date, time, location and what to expect.</p></div></div>
+      <div class="flex gap-4 md:border-l md:border-[#E8DDC6] md:pl-8"><span class="serif text-4xl text-[#C6A15B]">3</span><div><strong class="text-[15px]">Enjoy your shoot</strong><p class="text-sm text-[#6b665c] mt-1">Relaxed direction on the day, quality images after.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why" class="bg-ink py-20 md:py-28 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-[1fr_1.15fr] gap-12 items-center">
+    <div class="reveal relative order-2 lg:order-1">
+      <div class="rounded-[3px] overflow-hidden border border-white/10">
+        <img src="https://images.unsplash.com/photo-1493863641943-9b68992a8d07?q=80&w=900&auto=format&fit=crop" alt="Photographer at work with camera" class="w-full h-[480px] md:h-[580px] object-cover" loading="lazy">
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent pointer-events-none"></div>
+      <div class="absolute bottom-6 left-6 right-6 flex items-center justify-between">
+        <div><div class="text-[11px] tracking-mega uppercase text-gold font-bold">PaLupe Studio</div><div class="serif text-2xl text-white">Made for your story</div></div>
+        <a href="#booking" class="w-14 h-14 rounded-full bg-gold text-black flex items-center justify-center hover:scale-110 transition" aria-label="Book now"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+    <div class="order-1 lg:order-2">
+      <div class="reveal label flex items-center gap-3"><span class="w-8 h-px bg-gold inline-block"></span> Why Choose Us</div>
+      <h2 class="reveal reveal-d1 serif text-[42px] md:text-[58px] leading-[1.02] mt-3">Simple. Thoughtful.<br><span class="italic" style="color:#E9D9B4">Focused on you.</span></h2>
+      <div class="mt-10 space-y-0 border-t border-white/10">
+        <div class="reveal flex gap-6 py-7 border-b border-white/10 group hover:pl-2 transition-all duration-500"><span class="serif text-gold/60 text-xl w-10 shrink-0">01</span><div><h3 class="text-white font-bold text-[17px]">Professional Photography</h3><p class="text-cream/55 text-[14.5px] mt-1.5 leading-relaxed">A dedicated photography studio focused on clear, well-crafted images for every client.</p></div></div>
+        <div class="reveal reveal-d1 flex gap-6 py-7 border-b border-white/10 group hover:pl-2 transition-all duration-500"><span class="serif text-gold/60 text-xl w-10 shrink-0">02</span><div><h3 class="text-white font-bold text-[17px]">Creative Direction</h3><p class="text-cream/55 text-[14.5px] mt-1.5 leading-relaxed">Calm guidance on poses, locations and styling so you feel comfortable in front of the camera.</p></div></div>
+        <div class="reveal reveal-d2 flex gap-6 py-7 border-b border-white/10 group hover:pl-2 transition-all duration-500"><span class="serif text-gold/60 text-xl w-10 shrink-0">03</span><div><h3 class="text-white font-bold text-[17px]">Quality-Focused Results</h3><p class="text-cream/55 text-[14.5px] mt-1.5 leading-relaxed">Careful attention to light, composition and editing on every set of images.</p></div></div>
+        <div class="reveal reveal-d3 flex gap-6 py-7 border-b border-white/10 group hover:pl-2 transition-all duration-500"><span class="serif text-gold/60 text-xl w-10 shrink-0">04</span><div><h3 class="text-white font-bold text-[17px]">Convenient Booking</h3><p class="text-cream/55 text-[14.5px] mt-1.5 leading-relaxed">Reach us quickly by phone, WhatsApp or the booking form — and visit us easily in Egbeda.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="bg-cream text-ink py-20 md:py-28 relative">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="text-center max-w-2xl mx-auto">
+      <div class="reveal label justify-center">Reservations</div>
+      <h2 class="reveal reveal-d1 serif text-[42px] md:text-[60px] leading-tight mt-3">Book Your Session</h2>
+      <p class="reveal reveal-d2 text-[#6b665c] mt-3">Fill the form and we'll respond promptly. Prefer chat? Use WhatsApp — it's the fastest way to confirm.</p>
+    </div>
+    <div class="mt-12 grid lg:grid-cols-[380px_1fr] gap-6 items-start">
+      <!-- side -->
+      <div class="reveal space-y-5">
+        <div class="bg-ink text-cream rounded-[3px] p-8 border border-gold/20 relative overflow-hidden">
+          <div class="serif text-[28px] leading-tight">Prefer to chat<br><span class="italic text-gold-light" style="color:#E9D9B4">directly?</span></div>
+          <p class="text-cream/60 text-sm mt-3 leading-relaxed">Tap below to open WhatsApp with a ready-made booking message. Just add your details and send.</p>
+          <a id="sideWaBtn" href="https://wa.me/2348039517974?text=Hello%20PaLupe%20Photography!%20I%27d%20like%20to%20book%20a%20session." target="_blank" rel="noopener" class="mt-6 flex items-center justify-center gap-3 bg-[#25D366] text-[#062b16] font-extrabold text-[13px] tracking-[0.12em] uppercase py-4 rounded-[3px] hover:brightness-110 hover:-translate-y-0.5 transition">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.11 3.22 5.1 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35M12.04 2C6.56 2 2.1 6.45 2.1 11.93c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.48 0 9.93-4.45 9.93-9.93 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2"/></svg>
+            Book via WhatsApp
+          </a>
+          <div class="mt-4 text-center text-[13px] text-cream/50">0803 951 7974 • replies promptly</div>
+          <div class="absolute -right-10 -bottom-10 w-40 h-40 rounded-full border border-gold/20"></div>
+          <div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full border border-gold/20"></div>
+        </div>
+        <div class="bg-white border border-[#E8DDC6] rounded-[3px] p-7">
+          <div class="text-[11px] tracking-mega uppercase font-extrabold text-[#8A6D2E]">What happens next</div>
+          <ol class="mt-4 space-y-4 text-[14px]">
+            <li class="flex gap-3"><span class="w-7 h-7 shrink-0 rounded-full bg-ink text-gold text-[12px] font-bold flex items-center justify-center">1</span><span class="text-[#3d3a33]">You send your details via form or WhatsApp.</span></li>
+            <li class="flex gap-3"><span class="w-7 h-7 shrink-0 rounded-full bg-ink text-gold text-[12px] font-bold flex items-center justify-center">2</span><span class="text-[#3d3a33]">We confirm date, time and session type.</span></li>
+            <li class="flex gap-3"><span class="w-7 h-7 shrink-0 rounded-full bg-ink text-gold text-[12px] font-bold flex items-center justify-center">3</span><span class="text-[#3d3a33]">You visit the studio — or we meet on location.</span></li>
+          </ol>
+          <div class="gold-line my-6"></div>
+          <div class="text-sm text-[#6b665c] flex items-start gap-2"><svg class="shrink-0 mt-0.5" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#8A6D2E" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Studio visits by appointment. Please call or WhatsApp ahead so we're ready for you.</div>
+        </div>
+        <div class="bg-[#FFFDF6] border border-dashed border-[#C6A15B]/60 rounded-[3px] p-6">
+          <div class="text-[11px] tracking-mega uppercase font-extrabold text-[#8A6D2E] mb-2">Live summary</div>
+          <p id="bookingPreview" class="serif italic text-[17px] leading-snug text-[#3d3a33]">Your booking preview will appear here as you type…</p>
+        </div>
+      </div>
+
+      <!-- form -->
+      <div class="reveal reveal-d1 bg-white border border-[#E8DDC6] rounded-[3px] shadow-[0_30px_80px_-30px_rgba(11,11,12,.25)] overflow-hidden">
+        <div class="bg-ink px-7 md:px-10 py-6 flex items-center justify-between">
+          <div><div class="text-[11px] tracking-mega uppercase text-gold font-bold">Booking Form</div><div class="serif text-2xl text-white mt-1">Tell us about your session</div></div>
+          <div class="hidden sm:flex w-12 h-12 border border-gold/40 rounded-[3px] items-center justify-center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C6A15B" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+        </div>
+        <form id="bookingForm" class="p-7 md:p-10 grid sm:grid-cols-2 gap-5" novalidate>
+          <div class="field"><label for="fName">Full Name *</label><input id="fName" name="name" type="text" placeholder="e.g. Adaeze Okafor" autocomplete="name" required></div>
+          <div class="field"><label for="fPhone">Phone Number *</label><input id="fPhone" name="phone" type="tel" placeholder="e.g. 0803 000 0000" autocomplete="tel" required></div>
+          <div class="field"><label for="fEmail">Email</label><input id="fEmail" name="email" type="email" placeholder="you@example.com" autocomplete="email"></div>
+          <div class="field"><label for="fService">Photography Service *</label>
+            <select id="fService" name="service" required>
+              <option value="">Select a service…</option>
+              <option>Portrait Photography</option>
+              <option>Event Photography</option>
+              <option>Wedding Photography</option>
+              <option>Studio Photography</option>
+              <option>Outdoor Photography</option>
+              <option>Custom Session</option>
+            </select>
+          </div>
+          <div class="field"><label for="fDate">Preferred Date *</label><input id="fDate" name="date" type="date" required></div>
+          <div class="field"><label for="fTime">Preferred Time *</label><input id="fTime" name="time" type="time" required></div>
+          <div class="field sm:col-span-2"><label for="fMsg">Message</label><textarea id="fMsg" name="message" rows="4" placeholder="Tell us about your session — occasion, location, number of people, ideas you have…"></textarea></div>
+          <p id="formError" class="sm:col-span-2 hidden text-sm font-semibold text-red-700 bg-red-50 border border-red-200 rounded-[3px] px-4 py-3"></p>
+          <div class="sm:col-span-2 flex flex-col sm:flex-row gap-3 mt-1">
+            <button type="submit" class="btn-dark flex-1 px-8 py-4 text-[12.5px] font-extrabold tracking-[0.18em] uppercase rounded-[3px] inline-flex justify-center items-center gap-2">Submit Booking Request
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <button type="button" id="waSendBtn" class="flex-1 px-8 py-4 text-[12.5px] font-extrabold tracking-[0.14em] uppercase rounded-[3px] bg-[#25D366] text-[#062b16] hover:brightness-110 hover:-translate-y-0.5 transition inline-flex justify-center items-center gap-2">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.11 3.22 5.1 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35M12.04 2C6.56 2 2.1 6.45 2.1 11.93c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.48 0 9.93-4.45 9.93-9.93 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2"/></svg>
+              Book via WhatsApp
+            </button>
+          </div>
+          <p class="sm:col-span-2 text-[12.5px] text-[#8a857a] text-center">Submitting sends your request details — final confirmation happens on call or WhatsApp.</p>
+        </form>
+        <div id="bookingSuccess" class="hidden p-8 md:p-12 text-center">
+          <div class="w-16 h-16 mx-auto rounded-full bg-green-100 border border-green-300 flex items-center justify-center text-2xl text-green-700">✓</div>
+          <h3 class="serif text-3xl mt-5">Request received!</h3>
+          <p class="text-[#5c574d] text-[15px] mt-3 max-w-md mx-auto leading-relaxed" id="successText">Thank you! We'll be in touch shortly to confirm your session.</p>
+          <div id="successSummary" class="mt-6 text-left bg-cream border border-[#E8DDC6] rounded-[3px] p-6 text-sm leading-relaxed"></div>
+          <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
+            <a id="successWa" href="#" target="_blank" rel="noopener" class="bg-[#25D366] text-[#062b16] px-7 py-3.5 text-[12px] font-extrabold tracking-[0.16em] uppercase rounded-[3px]">Confirm on WhatsApp</a>
+            <button id="bookAgain" class="border border-ink/20 px-7 py-3.5 text-[12px] font-extrabold tracking-[0.16em] uppercase rounded-[3px] hover:border-[#8A6D2E]">Make another request</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION + CONTACT -->
+<section id="location" class="bg-ink py-20 md:py-28 border-t border-line">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-2 gap-10 items-stretch">
+    <div>
+      <div class="reveal label flex items-center gap-3"><span class="w-8 h-px bg-gold inline-block"></span> Visit Us</div>
+      <h2 class="reveal reveal-d1 serif text-[42px] md:text-[56px] leading-[1.02] mt-3">Find Us in <span class="italic" style="color:#E9D9B4">Egbeda.</span></h2>
+      <div class="reveal reveal-d2 mt-6 flex items-start gap-4 bg-coal border border-white/10 rounded-[3px] p-6">
+        <div class="w-12 h-12 shrink-0 rounded-[3px] bg-gold/15 border border-gold/30 flex items-center justify-center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C6A15B" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div><div class="text-white font-bold text-[17px]">1 Ayisat Street, off Olugbede Model Market</div><div class="text-cream/55 text-[14.5px] mt-1">Egbeda, Lagos, Nigeria</div><div class="text-cream/40 text-[13px] mt-2">Landmark: Olugbede Model Market — ask for Ayisat Street.</div></div>
+      </div>
+      <div class="reveal reveal-d3 mt-5 flex flex-col sm:flex-row gap-3">
+        <a href="https://www.google.com/maps/search/?api=1&query=1+Ayisat+Street+off+Olugbede+Model+Market+Egbeda+Lagos" target="_blank" rel="noopener" class="btn-gold flex-1 text-center px-6 py-4 text-[12px] font-extrabold tracking-[0.18em] uppercase rounded-[3px] inline-flex justify-center items-center gap-2">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Open in Google Maps
+        </a>
+        <a href="tel:+2348039517974" class="btn-ghost flex-1 text-center px-6 py-4 text-[12px] font-extrabold tracking-[0.18em] uppercase rounded-[3px] text-white">Get Directions by Call</a>
+      </div>
+      <!-- FAQ -->
+      <div class="reveal mt-8">
+        <div class="text-[11px] tracking-mega uppercase text-gold font-bold mb-3">Good to know</div>
+        <div class="space-y-3" id="faq">
+          <div class="faq-item bg-coal border border-white/10 rounded-[3px] overflow-hidden"><button class="faq-q w-full text-left px-5 py-4 flex justify-between items-center gap-4 text-[14.5px] font-bold text-white">How do I book a session? <span class="faq-icon text-2xl leading-none font-light">+</span></button><div class="faq-a px-5"><p class="pb-5 text-cream/55 text-[14px] leading-relaxed">Use the booking form above, call 0803 951 7974, or tap “Book via WhatsApp”. We'll confirm your date, time and session type with you directly.</p></div></div>
+          <div class="faq-item bg-coal border border-white/10 rounded-[3px] overflow-hidden"><button class="faq-q w-full text-left px-5 py-4 flex justify-between items-center gap-4 text-[14.5px] font-bold text-white">Do you shoot outdoors? <span class="faq-icon text-2xl leading-none font-light">+</span></button><div class="faq-a px-5"><p class="pb-5 text-cream/55 text-[14px] leading-relaxed">Yes. Alongside studio sessions in Egbeda, we shoot outdoor sessions at locations around Lagos. Tell us your preferred location when you book.</p></div></div>
+          <div class="faq-item bg-coal border border-white/10 rounded-[3px] overflow-hidden"><button class="faq-q w-full text-left px-5 py-4 flex justify-between items-center gap-4 text-[14.5px] font-bold text-white">How much does a session cost? <span class="faq-icon text-2xl leading-none font-light">+</span></button><div class="faq-a px-5"><p class="pb-5 text-cream/55 text-[14px] leading-relaxed">Pricing depends on the session type and requirements. Message us on WhatsApp with your service and date for current details — no obligation.</p></div></div>
+          <div class="faq-item bg-coal border border-white/10 rounded-[3px] overflow-hidden"><button class="faq-q w-full text-left px-5 py-4 flex justify-between items-center gap-4 text-[14.5px] font-bold text-white">How do I receive my photos? <span class="faq-icon text-2xl leading-none font-light">+</span></button><div class="faq-a px-5"><p class="pb-5 text-cream/55 text-[14px] leading-relaxed">Delivery details are confirmed when you book, based on your session. We'll walk you through everything before your shoot.</p></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal reveal-d2 flex flex-col gap-5">
+      <div class="rounded-[3px] overflow-hidden border border-white/10 flex-1 min-h-[380px] relative bg-coal">
+        <iframe title="Map showing Olugbede Model Market, Egbeda, Lagos" src="https://www.google.com/maps?q=Olugbede%20Model%20Market%20Egbeda%20Lagos%20Nigeria&output=embed" class="absolute inset-0 w-full h-full grayscale invert-[0.92] contrast-[0.9]" style="border:0;filter:grayscale(1) invert(0.92) contrast(0.9)" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <div class="absolute bottom-4 left-4 right-4 sm:right-auto bg-ink/90 backdrop-blur border border-gold/30 rounded-[3px] px-5 py-4 flex items-center gap-3">
+          <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+          <span class="text-[13px] text-cream/80">PaLupe Photography • Egbeda, Lagos</span>
+        </div>
+      </div>
+      <div id="contact" class="bg-cream text-ink rounded-[3px] p-7 md:p-8">
+        <div class="text-[11px] tracking-mega uppercase font-extrabold text-[#8A6D2E]">Contact</div>
+        <h3 class="serif text-[30px] mt-1">Let's talk about your shoot</h3>
+        <div class="mt-5 grid sm:grid-cols-2 gap-3 text-[14px]">
+          <a href="tel:+2348039517974" class="flex items-center gap-3 bg-white border border-[#E8DDC6] rounded-[3px] px-4 py-3.5 hover:border-[#8A6D2E] transition"><span class="w-9 h-9 rounded-full bg-ink text-gold flex items-center justify-center shrink-0"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.79.66 2.64a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.44-1.23a2 2 0 0 1 2.11-.45c.85.32 1.74.54 2.64.66A2 2 0 0 1 22 16.92z"/></svg></span><span><strong>Phone</strong><br><span class="text-[#5c574d]">0803 951 7974</span></span></a>
+          <a href="https://wa.me/2348039517974?text=Hello%20PaLupe%20Photography!" target="_blank" rel="noopener" class="flex items-center gap-3 bg-white border border-[#E8DDC6] rounded-[3px] px-4 py-3.5 hover:border-[#25D366] transition"><span class="w-9 h-9 rounded-full bg-[#25D366] text-white flex items-center justify-center shrink-0"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.11 3.22 5.1 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35M12.04 2C6.56 2 2.1 6.45 2.1 11.93c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.48 0 9.93-4.45 9.93-9.93 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2"/></svg></span><span><strong>WhatsApp</strong><br><span class="text-[#5c574d]">Chat with us</span></span></a>
+          <!-- OWNER: Replace href below with real Instagram URL -->
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="flex items-center gap-3 bg-white border border-[#E8DDC6] rounded-[3px] px-4 py-3.5 hover:border-[#8A6D2E] transition"><span class="w-9 h-9 rounded-full bg-ink text-gold flex items-center justify-center shrink-0"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></span><span><strong>Instagram</strong><br><span class="text-[#5c574d]">Follow our work</span></span></a>
+          <div class="flex items-center gap-3 bg-white border border-[#E8DDC6] rounded-[3px] px-4 py-3.5"><span class="w-9 h-9 rounded-full bg-ink text-gold flex items-center justify-center shrink-0"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span><strong>Studio</strong><br><span class="text-[#5c574d]">Egbeda, Lagos</span></span></div>
+        </div>
+        <div class="mt-5 grid grid-cols-3 gap-3">
+          <a href="tel:+2348039517974" class="btn-dark text-center py-3.5 text-[11px] font-extrabold tracking-[0.14em] uppercase rounded-[3px]">Call Now</a>
+          <a href="https://wa.me/2348039517974?text=Hello%20PaLupe%20Photography!%20I%27d%20like%20to%20book%20a%20session." target="_blank" rel="noopener" class="text-center py-3.5 text-[11px] font-extrabold tracking-[0.14em] uppercase rounded-[3px] bg-[#25D366] text-[#062b16] hover:brightness-110 transition">WhatsApp Us</a>
+          <a href="#booking" class="text-center py-3.5 text-[11px] font-extrabold tracking-[0.14em] uppercase rounded-[3px] bg-gold text-black hover:brightness-110 transition" style="background:#C6A15B">Book a Session</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-[#08080a] border-t border-line pt-14 pb-8">
+  <div class="max-w-7xl mx-auto px-5 md:px-8">
+    <div class="grid md:grid-cols-[1.3fr_1fr_1fr] gap-10">
+      <div>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 border border-gold/60 flex items-center justify-center rounded-[3px]"><span class="serif text-xl text-gold font-semibold">P</span></div>
+          <div><div class="serif text-2xl text-white">Pa<span class="italic text-gold">Lupe</span> Photography</div><div class="text-[10px] tracking-mega uppercase text-cream/40 mt-0.5">Egbeda, Lagos, Nigeria</div></div>
+        </div>
+        <p class="text-cream/45 text-[14px] mt-5 max-w-sm leading-relaxed">Professional photography in Egbeda, Lagos — portraits, weddings, events, studio and outdoor sessions. Your moments, beautifully captured.</p>
+        <div class="mt-5 flex items-center gap-1.5 text-[13px] text-cream/60"><span class="flex text-gold"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></span> 5.0 • 2 Google reviews</div>
+      </div>
+      <div>
+        <div class="text-[11px] tracking-mega uppercase text-gold font-bold mb-5">Explore</div>
+        <nav class="grid grid-cols-2 gap-3 text-[14px]" aria-label="Footer">
+          <a href="#home" class="text-cream/60 hover:text-gold transition">Home</a>
+          <a href="#portfolio" class="text-cream/60 hover:text-gold transition">Portfolio</a>
+          <a href="#services" class="text-cream/60 hover:text-gold transition">Services</a>
+          <a href="#about" class="text-cream/60 hover:text-gold transition">About</a>
+          <a href="#contact" class="text-cream/60 hover:text-gold transition">Contact</a>
+          <a href="#booking" class="text-cream/60 hover:text-gold transition">Book a Session</a>
+        </nav>
+      </div>
+      <div>
+        <div class="text-[11px] tracking-mega uppercase text-gold font-bold mb-5">Visit / Call</div>
+        <p class="text-cream/60 text-[14px] leading-relaxed">1 Ayisat Street, off Olugbede Model Market,<br>Egbeda, Lagos</p>
+        <a href="tel:+2348039517974" class="text-white font-bold text-lg mt-3 inline-block hover:text-gold transition">0803 951 7974</a>
+        <div class="mt-4 flex gap-2.5">
+          <a href="tel:+2348039517974" aria-label="Call" class="w-10 h-10 border border-white/15 rounded-[3px] flex items-center justify-center text-cream/70 hover:border-gold hover:text-gold transition"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.79.66 2.64a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.44-1.23a2 2 0 0 1 2.11-.45c.85.32 1.74.54 2.64.66A2 2 0 0 1 22 16.92z"/></svg></a>
+          <a href="https://wa.me/2348039517974" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-10 h-10 border border-white/15 rounded-[3px] flex items-center justify-center text-cream/70 hover:border-gold hover:text-gold transition"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.11 3.22 5.1 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35M12.04 2C6.56 2 2.1 6.45 2.1 11.93c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.48 0 9.93-4.45 9.93-9.93 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2"/></svg></a>
+          <a href="https://www.google.com/maps/search/?api=1&query=PaLupe+Photography+Egbeda+Lagos" target="_blank" rel="noopener" aria-label="Google Maps" class="w-10 h-10 border border-white/15 rounded-[3px] flex items-center justify-center text-cream/70 hover:border-gold hover:text-gold transition"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 border border-white/15 rounded-[3px] flex items-center justify-center text-cream/70 hover:border-gold hover:text-gold transition"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-3 text-[12.5px] text-cream/35">
+      <span>© 2026 PaLupe Photography. All rights reserved.</span>
+      <span class="tracking-[0.2em] uppercase text-[11px]">Home &nbsp;|&nbsp; Portfolio &nbsp;|&nbsp; Services &nbsp;|&nbsp; About &nbsp;|&nbsp; Contact</span>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<a href="https://wa.me/2348039517974?text=Hello%20PaLupe%20Photography!%20I%27d%20like%20to%20book%20a%20session." target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="wa-float fixed bottom-6 right-6 z-[75] w-[60px] h-[60px] rounded-full bg-[#25D366] flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="#062b16"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.11 3.22 5.1 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35M12.04 2C6.56 2 2.1 6.45 2.1 11.93c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.48 0 9.93-4.45 9.93-9.93 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2"/></svg>
+  <span class="absolute -top-1 -right-1 w-4 h-4 bg-gold rounded-full border-2 border-ink"></span>
+</a>
+<button id="toTop" aria-label="Back to top" class="fixed bottom-6 left-6 z-[75] w-11 h-11 rounded-[3px] bg-ink border border-gold/40 text-gold items-center justify-center hidden hover:bg-gold hover:text-black transition">↑</button>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="fixed inset-0 z-[95] hidden items-center justify-center bg-black/95 p-4 md:p-10" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button id="lbClose" class="absolute top-5 right-5 w-12 h-12 border border-white/25 rounded-[3px] text-white text-2xl hover:border-gold hover:text-gold transition z-10" aria-label="Close">×</button>
+  <button id="lbPrev" class="absolute left-3 md:left-8 top-1/2 -translate-y-1/2 w-12 h-12 border border-white/25 rounded-full text-white hover:border-gold hover:text-gold transition z-10" aria-label="Previous">‹</button>
+  <button id="lbNext" class="absolute right-3 md:right-8 top-1/2 -translate-y-1/2 w-12 h-12 border border-white/25 rounded-full text-white hover:border-gold hover:text-gold transition z-10" aria-label="Next">›</button>
+  <figure class="max-w-4xl w-full text-center">
+    <img id="lbImg" src="" alt="" class="mx-auto rounded-[3px] object-contain w-auto max-w-full">
+    <figcaption class="mt-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-left">
+      <div><div id="lbTitle" class="serif text-2xl text-white"></div><div id="lbCat" class="text-[11px] tracking-mega uppercase text-gold font-bold mt-1"></div></div>
+      <div id="lbCount" class="text-cream/50 text-sm tracking-widest"></div>
+    </figcaption>
+  </figure>
+</div>
+
+<!-- TOAST -->
+<div id="toast" class="fixed bottom-24 right-6 z-[96] max-w-xs bg-ink border border-gold/40 text-cream text-sm px-5 py-4 rounded-[3px] shadow-2xl hidden"></div>
+
+<script>
+/* =====================================================================
+   OWNER — EASY PORTFOLIO EDITING
+   To replace a placeholder image: just change the "src" link below.
+   - Keep "category" as one of: portraits | weddings-events | studio | lifestyle
+   - "title" is the caption shown on hover + lightbox
+   - "h" controls tile height (tall/medium/short) for masonry variety
+===================================================================== */
+const PORTFOLIO_DATA = [
+  { src:"https://images.unsplash.com/photo-1539701938214-0d9736e1c16b?q=80&w=800&auto=format&fit=crop", category:"portraits", title:"Golden Hour Portrait", h:"tall" },
+  { src:"https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop", category:"weddings-events", title:"Wedding Day Embrace", h:"medium" },
+  { src:"https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop", category:"studio", title:"Studio Glow Session", h:"tall" },
+  { src:"https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=800&auto=format&fit=crop", category:"lifestyle", title:"Friends & Laughter", h:"short" },
+  { src:"https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop", category:"portraits", title:"Classic Male Portrait", h:"medium" },
+  { src:"https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=800&auto=format&fit=crop", category:"weddings-events", title:"Celebration Details", h:"short" },
+  { src:"https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=800&auto=format&fit=crop", category:"studio", title:"Beauty in Studio Light", h:"medium" },
+  { src:"https://images.unsplash.com/photo-1531384441138-2736e62e0919?q=80&w=800&auto=format&fit=crop", category:"portraits", title:"Confident Portrait", h:"tall" },
+  { src:"https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=800&auto=format&fit=crop", category:"weddings-events", title:"The Couple", h:"tall" },
+  { src:"https://images.unsplash.com/photo-1595152772835-219674b2a8a6?q=80&w=800&auto=format&fit=crop", category:"studio", title:"Clean Headshot", h:"short" },
+  { src:"https://images.unsplash.com/photo-1493863641943-9b68992a8d07?q=80&w=800&auto=format&fit=crop", category:"lifestyle", title:"Creative Lifestyle", h:"medium" },
+  { src:"https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=800&auto=format&fit=crop", category:"lifestyle", title:"Soft Natural Light", h:"tall" }
+];
+const CAT_LABEL = { "portraits":"Portraits", "weddings-events":"Weddings & Events", "studio":"Studio Sessions", "lifestyle":"Lifestyle" };
+const WHATSAPP_NUMBER = "2348039517974";
+
+(function(){
+  "use strict";
+  const $ = s=>document.querySelector(s), $$ = s=>document.querySelectorAll(s);
+
+  /* Preloader */
+  window.addEventListener("load", ()=> setTimeout(()=> $("#preloader").classList.add("done"), 900));
+  setTimeout(()=> $("#preloader").classList.add("done"), 3200);
+
+  /* Progress + nav + toTop */
+  const nav=$("#nav"), prog=$("#progress"), toTop=$("#toTop");
+  function onScroll(){
+    const y=window.scrollY;
+    nav.classList.toggle("scrolled", y>40);
+    const h=document.documentElement.scrollHeight-innerHeight;
+    prog.style.transform=`scaleX(${h>0?y/h:0})`;
+    if(y>600){toTop.classList.remove("hidden");toTop.classList.add("flex");}else{toTop.classList.add("hidden");toTop.classList.remove("flex");}
+  }
+  window.addEventListener("scroll", onScroll,{passive:true}); onScroll();
+  toTop.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
+
+  /* Mobile menu */
+  const mm=$("#mobileMenu");
+  $("#menuBtn").addEventListener("click",()=>{mm.classList.remove("hidden");mm.classList.add("flex");document.body.style.overflow="hidden";});
+  const closeMM=()=>{mm.classList.add("hidden");mm.classList.remove("flex");document.body.style.overflow="";};
+  $("#menuClose").addEventListener("click",closeMM);
+  $$(".mob-link").forEach(a=>a.addEventListener("click",closeMM));
+
+  /* Reveal */
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");io.unobserve(e.target);}}),{threshold:.12});
+  $$(".reveal").forEach(el=>io.observe(el));
+
+  /* Active nav */
+  const secIds=["home","about","portfolio","services","why","contact"];
+  const navLinks=[...document.querySelectorAll(".nav-link")];
+  const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){navLinks.forEach(l=>l.classList.toggle("active",l.getAttribute("href")==="#"+e.target.id));}}),{rootMargin:"-40% 0px -55% 0px"});
+  secIds.forEach(id=>{const el=document.getElementById(id);if(el)so.observe(el);});
+
+  /* Hero slider */
+  const slides=[...document.querySelectorAll(".hero-slide")], dotsWrap=$("#heroDots"), counter=$("#heroCounter");
+  let hi=0, hTimer;
+  slides.forEach((_,i)=>{
+    const b=document.createElement("button");
+    b.className="w-[7px] h-[7px] rounded-full transition-all duration-500 "+(i===0?"bg-gold h-8 rounded-full":"bg-white/30");
+    b.style.height=i===0?"28px":"7px";
+    b.setAttribute("aria-label","Show image "+(i+1));
+    b.addEventListener("click",()=>{showHero(i);restartHero();});
+    dotsWrap.appendChild(b);
+  });
+  function showHero(i){
+    slides[hi].classList.remove("active"); hi=(i+slides.length)%slides.length; slides[hi].classList.add("active");
+    [...dotsWrap.children].forEach((d,k)=>{d.style.height=k===hi?"28px":"7px";d.className="rounded-full transition-all duration-500 "+(k===hi?"bg-gold":"bg-white/30");});
+    counter.textContent=String(hi+1).padStart(2,"0")+" / "+String(slides.length).padStart(2,"0");
+  }
+  function restartHero(){clearInterval(hTimer);hTimer=setInterval(()=>showHero(hi+1),6500);}
+  restartHero();
+
+  /* Portfolio render + filter + lightbox */
+  const gallery=$("#gallery");
+  let currentList=[...PORTFOLIO_DATA], lbIndex=0;
+  const hMap={tall:"h-[440px]",medium:"h-[340px]",short:"h-[260px]"};
+  function renderGallery(filter="all"){
+    gallery.innerHTML="";
+    currentList=PORTFOLIO_DATA.filter(p=>filter==="all"||p.category===filter);
+    currentList.forEach((p,idx)=>{
+      const fig=document.createElement("figure");
+      fig.className="m-item group";
+      fig.setAttribute("tabindex","0"); fig.setAttribute("role","button");
+      fig.setAttribute("aria-label","View "+p.title+" fullscreen");
+      fig.innerHTML=`
+        <img src="${p.src}" alt="${p.title} — ${CAT_LABEL[p.category]} sample" loading="lazy" class="${hMap[p.h]||'h-[340px]'}">
+        <span class="absolute top-3 left-3 text-[10px] tracking-[0.2em] uppercase font-extrabold bg-black/60 backdrop-blur border border-gold/40 text-gold px-2.5 py-1 rounded-[2px]">Sample</span>
+        <div class="overlay"></div>
+        <figcaption class="absolute bottom-0 left-0 right-0 p-5 flex items-end justify-between gap-3">
+          <div><div class="text-[10px] tracking-[0.25em] uppercase text-gold font-bold">${CAT_LABEL[p.category]}</div>
+          <div class="serif text-[22px] text-white leading-tight mt-1">${p.title}</div></div>
+          <span class="w-10 h-10 shrink-0 rounded-full border border-white/30 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition text-lg">⤢</span>
+        </figcaption>`;
+      const open=()=>openLightbox(idx);
+      fig.addEventListener("click",open);
+      fig.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();open();}});
+      gallery.appendChild(fig);
+      requestAnimationFrame(()=>{fig.style.opacity="0";fig.style.transform="translateY(24px)";fig.style.transition="opacity .7s ease,transform .7s cubic-bezier(.22,1,.36,1)";setTimeout(()=>{fig.style.opacity="1";fig.style.transform="none";},60*idx);});
+    });
+    if(!currentList.length) gallery.innerHTML='<p class="text-cream/50 text-center py-10">No images in this category yet.</p>';
+  }
+  renderGallery();
+  $$(".filter-btn").forEach(b=>b.addEventListener("click",()=>{
+    $$(".filter-btn").forEach(x=>x.classList.remove("active")); b.classList.add("active");
+    renderGallery(b.dataset.filter);
+  }));
+
+  const lb=$("#lightbox"), lbImg=$("#lbImg"), lbTitle=$("#lbTitle"), lbCat=$("#lbCat"), lbCount=$("#lbCount");
+  function openLightbox(i){lbIndex=i;updateLb();lb.classList.remove("hidden");lb.classList.add("flex");document.body.style.overflow="hidden";lbImg.focus&&lbImg.focus();}
+  function updateLb(){const p=currentList[lbIndex];if(!p)return;lbImg.src=p.src.replace("w=800","w=1400");lbImg.alt=p.title;lbTitle.textContent=p.title;lbCat.textContent=CAT_LABEL[p.category]+" • Sample image";lbCount.textContent=(lbIndex+1)+" / "+currentList.length;}
+  function closeLb(){lb.classList.add("hidden");lb.classList.remove("flex");document.body.style.overflow="";}
+  $("#lbClose").addEventListener("click",closeLb);
+  $("#lbPrev").addEventListener("click",e=>{e.stopPropagation();lbIndex=(lbIndex-1+currentList.length)%currentList.length;updateLb();});
+  $("#lbNext").addEventListener("click",e=>{e.stopPropagation();lbIndex=(lbIndex+1)%currentList.length;updateLb();});
+  lb.addEventListener("click",e=>{if(e.target===lb)closeLb();});
+  document.addEventListener("keydown",e=>{if(lb.classList.contains("hidden"))return;if(e.key==="Escape")closeLb();if(e.key==="ArrowLeft")$("#lbPrev").click();if(e.key==="ArrowRight")$("#lbNext").click();});
+  let tx=0;lb.addEventListener("touchstart",e=>tx=e.touches[0].clientX,{passive:true});
+  lb.addEventListener("touchend",e=>{const dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>50){dx>0?$("#lbPrev").click():$("#lbNext").click();}},{passive:true});
+
+  /* Service pre-select */
+  $$(".svc-book").forEach(a=>a.addEventListener("click",()=>{
+    const s=a.dataset.service; const sel=$("#fService");
+    if(s) sel.value=s;
+    updatePreview(); toast("Service selected: "+s+" — complete the form to book.");
+  }));
+
+  /* Booking */
+  const form=$("#bookingForm"), err=$("#formError"), preview=$("#bookingPreview"), success=$("#bookingSuccess");
+  const fDate=$("#fDate"); fDate.min=new Date().toISOString().split("T")[0];
+  function vals(){return{name:$("#fName").value.trim(),phone:$("#fPhone").value.trim(),email:$("#fEmail").value.trim(),service:$("#fService").value,date:fDate.value,time:$("#fTime").value,message:$("#fMsg").value.trim()};}
+  function fmtDate(d){if(!d)return"";try{return new Date(d+"T00:00").toLocaleDateString("en-GB",{weekday:"short",day:"numeric",month:"short",year:"numeric"});}catch{return d;}}
+  function fmtTime(t){if(!t)return"";const[h,m]=t.split(":").map(Number);const ap=h>=12?"PM":"AM";const hh=h%12||12;return hh+":"+String(m).padStart(2,"0")+" "+ap;}
+  function buildMsg(v){return `Hello PaLupe Photography!%0A%0AMy name is ${encodeURIComponent(v.name||"[My Name]")}.%0AI'd like to book: ${encodeURIComponent(v.service||"[Service]")}%0APreferred date: ${encodeURIComponent(v.date?fmtDate(v.date):"[Date]")}%0APreferred time: ${encodeURIComponent(v.time?fmtTime(v.time):"[Time]")}%0APhone: ${encodeURIComponent(v.phone||"[Phone]")}${v.message?`%0ADetails: ${encodeURIComponent(v.message)}`:""}%0A%0AThank you!`;}
+  // Note: buildMsg above double-encodes; rebuild cleanly:
+  function waLink(v){
+    const lines=["Hello PaLupe Photography!","",`My name is ${v.name||"-"}.`,`I'd like to book: ${v.service||"-"}`,`Preferred date: ${v.date?fmtDate(v.date):"-"}`,`Preferred time: ${v.time?fmtTime(v.time):"-"}`,`Phone: ${v.phone||"-"}`];
+    if(v.email)lines.push(`Email: ${v.email}`);
+    if(v.message)lines.push(`Details: ${v.message}`);
+    lines.push("","Thank you!");
+    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join("\n"))}`;
+  }
+  function updatePreview(){
+    const v=vals();
+    if(!v.name&&!v.service&&!v.date&&!v.time){preview.textContent="Your booking preview will appear here as you type…";$("#sideWaBtn").href=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hello PaLupe Photography! I'd like to book a session.")}`;return;}
+    preview.innerHTML=`“Hello, I'm <strong>${v.name||"…"}</strong>. I'd like <strong>${v.service||"…"}</strong> on <strong>${v.date?fmtDate(v.date):"…"}</strong> at <strong>${v.time?fmtTime(v.time):"…"}</strong>.”`;
+    $("#sideWaBtn").href=waLink(v);
+  }
+  ["fName","fPhone","fEmail","fService","fDate","fTime","fMsg"].forEach(id=>document.getElementById(id).addEventListener("input",updatePreview));
+  function toast(msg){const t=$("#toast");t.textContent=msg;t.classList.remove("hidden");clearTimeout(t._x);t._x=setTimeout(()=>t.classList.add("hidden"),3800);}
+  function validate(v){
+    if(!v.name){return "Please enter your full name.";}
+    if(!v.phone||v.phone.replace(/\D/g,"").length<7){return "Please enter a valid phone number so we can reach you.";}
+    if(v.email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.email)){return "Please check your email address.";}
+    if(!v.service){return "Please select a photography service.";}
+    if(!v.date){return "Please choose a preferred date.";}
+    if(!v.time){return "Please choose a preferred time.";}
+    return "";
+  }
+  form.addEventListener("submit",e=>{
+    e.preventDefault();
+    const v=vals(); const msg=validate(v);
+    if(msg){err.textContent=msg;err.classList.remove("hidden");err.scrollIntoView({behavior:"smooth",block:"center"});return;}
+    err.classList.add("hidden");
+    $("#successText").textContent=`Thank you, ${v.name.split(" ")[0]}! Your request for ${v.service} on ${fmtDate(v.date)} at ${fmtTime(v.time)} has been noted. We'll confirm shortly on ${v.phone}.`;
+    $("#successSummary").innerHTML=`<div class="grid grid-cols-[110px_1fr] gap-y-2 gap-x-3"><span class="text-[#8A6D2E] font-bold uppercase text-[11px] tracking-widest">Name</span><span class="font-semibold">${v.name}</span><span class="text-[#8A6D2E] font-bold uppercase text-[11px] tracking-widest">Service</span><span>${v.service}</span><span class="text-[#8A6D2E] font-bold uppercase text-[11px] tracking-widest">Date</span><span>${fmtDate(v.date)}</span><span class="text-[#8A6D2E] font-bold uppercase text-[11px] tracking-widest">Time</span><span>${fmtTime(v.time)}</span><span class="text-[#8A6D2E] font-bold uppercase text-[11px] tracking-widest">Phone</span><span>${v.phone}</span></div>`;
+    const link=waLink(v); $("#successWa").href=link;
+    form.classList.add("hidden"); success.classList.remove("hidden");
+    success.scrollIntoView({behavior:"smooth",block:"center"});
+    toast("Booking request ready — tap Confirm on WhatsApp for fastest response.");
+  });
+  $("#waSendBtn").addEventListener("click",()=>{
+    const v=vals(); const msg=validate(v);
+    if(msg){err.textContent=msg+" (Or complete the highlighted fields to continue on WhatsApp.)";err.classList.remove("hidden");toast("Please add your name, service, date & time first.");return;}
+    err.classList.add("hidden");
+    window.open(waLink(v),"_blank","noopener");
+    toast("Opening WhatsApp with your booking message…");
+  });
+  $("#bookAgain").addEventListener("click",()=>{success.classList.add("hidden");form.classList.remove("hidden");form.reset();updatePreview();});
+
+  /* FAQ */
+  $$(".faq-item").forEach(item=>{
+    item.querySelector(".faq-q").addEventListener("click",()=>{
+      const open=item.classList.contains("open");
+      $$(".faq-item").forEach(x=>x.classList.remove("open"));
+      if(!open)item.classList.add("open");
+    });
+  });
+})();
+</script>
+</body>
+</html>
